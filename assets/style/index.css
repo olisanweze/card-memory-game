@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+.container {
+    width: min(100% - 40px, 1200px);
+    margin-inline: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -12,8 +17,7 @@ body {
 .game-board {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    width: 400px;
+    grid-gap: 15px;
 }
   
 .card {
@@ -26,7 +30,7 @@ body {
     width: 80px;
     cursor: pointer;
     perspective: 1000px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
   
 .card-inner {
