@@ -53,7 +53,10 @@ function flipCard() {
 }
   
 function checkForMatch() {
-    if (firstCard.querySelector(".card-front i").className === secondCard.querySelector(".card-front i").className) {
+    let isMatch = firstCard.querySelector(".card-front i").className === 
+    secondCard.querySelector(".card-front i").className;
+    
+    if (isMatch) {
       disableCards();
       return;
     }
