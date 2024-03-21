@@ -1,5 +1,7 @@
 'use strict';
 
+const reset = document.querySelector('button');
+
 const icons = [
     "fas fa-sun",
     "fas fa-bicycle",
@@ -96,3 +98,8 @@ function init() {
 }
   
 init();
+
+reset.addEventListener('click', () => {
+  gameBoard.innerHTML = '';
+  init();
+});
